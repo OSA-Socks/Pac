@@ -61,6 +61,6 @@ For the proxy changes to apply, you may need to:
 
 or
 
-- Navigate to `about:networking` and clear both the HTTP and DNS cache.
+- Navigate to `about:networking` to clear both the HTTP and DNS cache.
 
 ### On Chromium
