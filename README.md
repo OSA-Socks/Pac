@@ -4,5 +4,4 @@
 
 # PAC
 ## A Proxy Auto-Config file, or **PAC** for short
-
-## Is a modern standard adapted by most modern web browsers to automate proxy resolution with JavaScript
+is a modern standard adapted by most modern web browsers to automate proxy resolution with JavaScript
