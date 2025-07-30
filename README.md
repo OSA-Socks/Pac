@@ -54,7 +54,7 @@ Automatic proxy settings are located in the "Network Settings" section, which yo
 Change the proxy option to the following:
 ![Two UI elements are shown, a checked checkbox saying "Automatic proxy configuration URL" and a file input displaying a file:// path to a PAC file](proxy.png)
 
-Naturally, you should adjust the value to match your operating system's correct path schema.
+Naturally, you should adjust the value to match both your operating system's correct path schema and the location of your PAC file.
 
 For the proxy changes to apply, you may need to:
 - Re-open Firefox
