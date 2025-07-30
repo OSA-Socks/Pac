@@ -9,6 +9,7 @@
 ## This guide will explain how to create a custom PAC file to bypass restricted sites using a SOCKS5 proxy set up in the [predecessor guide](https://github.com/OSA-Socks/Docker)
 
 ## 1. Creating the file
+
 Firstly, Choose a safe and memorable folder to store your PAC file, so you don’t accidentally lose it.
 
 Once you have decided on a directly, create a file. The file name and extension don't technically matter, but you may want to use `.pac` to remember the file purpose.
@@ -19,10 +20,7 @@ As a good baseline, you can use the following code:
 
 ```js
 function FindProxyForURL(url, host) {
-  var whitelist = [
-    "*.reddit.com",
-    "bsky.app"
-  ];
+  var whitelist = ["*.reddit.com", "bsky.app"];
 
   for (var i = 0; i < whitelist.length; i++) {
     if (shExpMatch(host, whitelist[i])) {
@@ -49,6 +47,7 @@ It's important to include subdomain wildcards on sites that require them, otherw
 ## 2. Configuring Your Browser
 
 ### On Firefox
+
 Automatic proxy settings are located in the "Network Settings" section, which you can search to find.
 
 Change the proxy option to the following:
@@ -57,6 +56,7 @@ Change the proxy option to the following:
 Naturally, you should adjust the value to match both your operating system's path schema and the location of your PAC file.
 
 For the proxy changes to apply, you may need to:
+
 - Re-open Firefox
 
 or
@@ -64,6 +64,9 @@ or
 - Navigate to `about:networking` to clear both the HTTP and DNS cache.
 
 ### On Chromium
+
 For Chromium based browsers, you can configure a PAC file one of two ways:
+
 A. Run chromium with the pac flag, ie: `chromium --proxy-pac-url="file:///home/sami/storage/Software/Socks/proxy.pac"`.
+
 B. Configure your host OS to use your PAC.
