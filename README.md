@@ -69,4 +69,4 @@ For Chromium based browsers, you can configure a PAC file one of two ways:
 
 A. Run chromium with the pac flag, ie: `chromium --proxy-pac-url="file:///home/sami/storage/Software/Socks/proxy.pac"`.
 
-B. Configure your host OS to use your PAC.
+B. Configure your OS to use your PAC.
